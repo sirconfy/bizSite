@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d9dadade82.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans+TC|Varela+Round&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <style>
+
+    body {
+     font-family: Varela Round;
+     font-size: 22px;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 18px
+    }
+
+
+i{
+color: white;
+font-size: 35px;
+}
+
+    h1, h2, h3{color: orange;
+    font-family: Anton;
+    text-align: center;
+    }
+    h2{font-size: 2px;}
+    
+    
+    .col-sm-4 p{
+      text-align: left;
+    }
+    #main {
+      border-bottom: 1px solid #c1c1c1;
+      width: 100%;
+      margin: 10px 0 30px 0;
+      padding: 0 0 30px 0;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+
+
+
+#nav {
+  background-color: black;
+}
+
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+.cont {
+  padding: 16px;
+}
+
+
+iu
+
+/* Full-width input fields */
+  input[type=text],  input[type=password] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,  input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+        <ul class="nav justify-content-end navbar-expand-sm bg-dark navbar-dark fixed-top">
+            
+           
+    <li class="nav-item">
+      <a class="nav-link" onclick="document.getElementById('rep').style.display='block'"  href="#">Sign up</a>
+    </li>
+
+
+     <!-- Login Modal button starts from here -->
+        
+       
+    <li class="nav-item">
+      <a class="nav-link" onclick="document.getElementById('id01').style.display='block'"   href="#">Login</a>
+    </li>
+  </ul>
+</div>
+       
+  <!-- The Modal for login -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action=" ">
+     
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+       
+      
+
+
+
+ <!-- sign up Modal button starts from here -->
+        
+<div id="rep" class="modal">
+    <span onclick="document.getElementById('rep').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate" action=" ">
+       
+  
+      <div class="cont">
+
+          <label for="name"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter your full name" name="name" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+      
+          <button type="submit" class="registerbtn">Register</button>
+        
+      </div>
+
+    </form>
+  </div>
+         
+
+
+
+ <!-- web content starts from here -->
+        
+    <div class="jumbotron text-center">
+      <br> <br>
+        <h1>CHEAPEST ORDER CONCEPT </h1>
+        <p>Welcome to Marketing And Importation Rudiments. <br> This training is basically free and it is meant for people who wants to be  <br> <b> financially free </b> and start their own business with <b> little capital</b> </p> 
+      </div>
+      <div id='main'>
+      <div class="container">
+        
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>What you will Learn</h3>
+              <ul>
+                <li>How to start Importing with as low ₦10,000 from and other countries.</li>
+                <li>How to spot most selling product.</li>
+                <li>How to sell your imported goods using Facebook.</li>
+                <li>How to create facebook chat bot.
+                         </li>
+              </ul>
+        
+            </div>
+            <div class="col-sm-4">
+              <h3>Who is this training for?</h3>
+              <p>This training is basically meant for the underlisted categories of people</p>
+              <ul>
+                <li>A student</li>
+                <li>A Graduate or corper</li>
+                <li>Workers who wants to earn aside salary.</li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3>How to join</h3>        
+              <p>
+                  To be eligible to join the platform, you are to perform a certain task. Click the invite button below and share to 15 whatsapp group or contact, upon completed the task the Join training button will appear to click and join the training group.Return to this page when the task is completed.</p>
+
+                  <p>  Please note that you won't be able to join unless the task is completed.</p>
+                 
+              
+        
+          </div>
+        </div>
+        </div>
+        
+        </div>
+        
+        <div class="container">
+        <h3>Location of the Training</h3>        
+        <p>
+            
+The training is 100% online based, which makes all the course content to be available to user anywhere, any day and anytime needed. Questions and answers will be attended to on the page and other students will also be ready to help.</p>
+
+        
+
+  </div>
+<br> <br>
+
+
+
+
+
+  <footer>
+      <div class="container">
+         <b> Privacy Policy</b>
+         <br>
+         <p> This website is not receiving any of your data. Your activity on this page remain annonymous </p>
+
+ <P> Address:
+No 23, Post office Area Along Station Road Ikirun Osun State
+ </P>   
+<P> © 2019 copyright Marketing And Importation Rudiments. </P>
+<a href='http://facebook.com'> <i class="fab fa-facebook-square"></i></a> 
+<a href='http://twitter.com'><i class="fab fa-twitter-square"></i></a>
+<a href='http://instagram.com'><i class="fab fa-instagram"></i></a>
+<a href='http://instagram.com'><i class="fab fa-whatsapp-square"></i></a>
+</div>
+
+    </footer>
+            
+        
+
+      <script>
+  
+  // Get the modal for login
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Get the modal for sign up
+var modal = document.getElementById('rep');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+
+
+
+</script>
+  
+        
+</body>
+</html>
